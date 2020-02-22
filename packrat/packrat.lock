@@ -7,3 +7,14 @@ Package: packrat
 Source: CRAN
 Version: 0.5.0
 Hash: 498643e765d1442ba7b1160a1df3abf9
+
+Package: rgdal
+Source: CRAN
+Version: 1.4-8
+Hash: bd894afb9c39d093a4062c198a98f643
+Requires: sp
+
+Package: sp
+Source: CRAN
+Version: 1.4-0
+Hash: ee9700b39152f5c9b720aaa890d4c1db
