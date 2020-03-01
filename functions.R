@@ -93,7 +93,7 @@ calculate_average_speed <- function(run_df){
 }
 
 calculate_average_pace <- function(run_df){
-  pace_col <- run_df[,'Average moving pace']
+  pace_col <- run_df[,'Fastest pace']
   min_pos <-
     str_locate(pace_col, pattern = ' min/km') %>% 
     data.frame() %>% 

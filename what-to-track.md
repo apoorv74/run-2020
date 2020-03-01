@@ -1,27 +1,19 @@
-## Project Run
-
+## The 2020 Run Dashboard
 
 ### Metrics 
-
-__Past runs__
 
 * Total Distance
 * Total time
 * Total Runs
 * Average distance per run
 * Longest Run
-* Most active week
-* Most active month
-* Highest pace
-
-__Target__
-
-* Total distance to cover
-* Distance remaining
-* Average distance per week (assume 4 running days)
-
+* Fastest km (Pace)
 
 ### Graphs
 
-* 2020 calendar [Heat map like github]
-* Total distance (Line chart of cumulative distance)
+* Total distance per month
+* Total runs per month
+* Total distance per week day
+* Total runs per week day
+
+## Data table of runs

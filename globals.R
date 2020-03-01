@@ -4,6 +4,10 @@ library(stringr)
 library(glue)
 library(googledrive)
 library(tidyverse)
+library(flexdashboard)
+library(hms)
+library(lubridate)
+library(knitr)
 
 all_vars <-
   c('OpenTracks Name',

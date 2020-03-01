@@ -14,11 +14,9 @@ all_runs_df <- lapply(run_description, fetch_variables) %>% dplyr::bind_rows()
 
 ## Add custom variables to the dataframe
 updated_runs_df <- add_variables(all_runs_df)
+readr::write_rds(x = updated_runs_df, path = 'all_runs.rds')
 
+## Render flexdashboard
 
-## Store runs in a SQLite file
-## Process metrics [what-to-track.md]
-## Prepare graphs
-## Prepare page
 ## Deploy to behindbars
 

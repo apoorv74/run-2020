@@ -1,0 +1,136 @@
+---
+title: "Run Dashboard"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: rows
+    vertical_layout: scroll
+---
+    
+```{r setup, include=FALSE}
+source("globals.R")
+run_dataset <-
+  readr::read_rds('all_runs.rds') %>% mutate(`Cumulative Distance` = cumsum(`Distance (km)`),month = month(`Date of run`,label = TRUE, abbr = TRUE), day = wday(`Date of run`,label = TRUE, abbr = TRUE,week_start = 1))
+```
+
+Dashboard {data-orientation=rows, data-icon="fa-chart-bar"}
+===================================== 
+    
+Row
+-------------------------------------
+    
+### `r emo::ji("running")` Distance Covered (Km's)
+
+```{r}
+distance <- sum(run_dataset$`Distance (km)`)
+flexdashboard::valueBox(distance)
+```
+
+### `r emo::ji("time")` Time (Hours)
+
+```{r}
+time <- sum(run_dataset$`Moving Time (sec)`) %>% hms::hms()
+flexdashboard::valueBox(time)
+```
+
+### `r emo::ji("rowboat")` Runs
+
+```{r}
+runs <- nrow(run_dataset)
+flexdashboard::valueBox(runs)
+```
+
+Row
+-------------------------------------
+
+### `r emo::ji("metrics")` Avg distance per day (Km's)
+
+```{r}
+avg_distance_per_run <- round(mean(run_dataset$`Distance (km)`),2)
+flexdashboard::valueBox(avg_distance_per_run)
+```
+
+### `r emo::ji("sweat")` Longest run (Km's)
+
+```{r}
+longest_run <- max(run_dataset$`Distance (km)`)
+flexdashboard::valueBox(longest_run)
+```
+
+### `r emo::ji("fast")` Fastest KM (minutes)
+
+```{r}
+fastest_km <- min(run_dataset$`Average Pace (sec)`) %>% hms::hms()
+flexdashboard::valueBox(fastest_km)
+```
+
+Row
+-------------------------------------
+
+### `r emo::ji("calendar")` Distance covered per month (Km's)
+
+```{r}
+month_df <- run_dataset %>% group_by(month) %>% summarise(total_distance = sum(`Distance (km)`), total_runs = length(month))
+
+ggplot(month_df, aes(x=month, y=total_distance)) + 
+  geom_bar(stat="identity", width=.4, fill="#a0c1d1") + 
+  coord_flip() +
+  theme_minimal(base_family = "PT Sans") +
+  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),axis.title = element_blank(), axis.ticks.x = element_blank(), axis.text.x = element_blank()) + geom_text(aes(label=total_distance),position = position_stack(vjust = 0.9))
+```
+
+### `r emo::ji("running")` Monthly Runs
+
+```{r}
+ggplot(month_df, aes(x=month, y=total_runs)) + 
+  geom_bar(stat="identity", width=.4, fill="#a0c1d1") + 
+  coord_flip() +
+  theme_minimal(base_family = "PT Sans") +
+  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),axis.title = element_blank(), axis.ticks.x = element_blank(), axis.text.x = element_blank()) + geom_text(aes(label=total_runs),position = position_stack(vjust = 0.9))
+```
+
+Row
+-------------------------------------
+
+### `r emo::ji("bicycle")` Distance covered per day (Km)
+
+```{r}
+weekly_df <- run_dataset %>% group_by(day) %>% summarise(total_distance = sum(`Distance (km)`), total_runs = length(day))
+
+ggplot(weekly_df, aes(x=day, y=total_distance)) + 
+  geom_bar(stat="identity", width=.4, fill="#a0c1d1") + 
+  coord_flip() +
+  theme_minimal(base_family = "PT Sans") +
+  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),axis.title = element_blank(), axis.ticks.x = element_blank(), axis.text.x = element_blank()) + geom_text(aes(label=total_distance),position = position_stack(vjust = 0.9))
+```
+
+### `r emo::ji("sports")` Active week days (#runs)
+
+```{r}
+ggplot(weekly_df, aes(x=day, y=total_runs)) + 
+  geom_bar(stat="identity", width=.4, fill="#a0c1d1") + 
+  coord_flip() +
+  theme_minimal(base_family = "PT Sans") +
+  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),axis.title = element_blank(), axis.ticks.x = element_blank(), axis.text.x = element_blank()) + geom_text(aes(label=total_runs),position = position_stack(vjust = 0.9))
+```
+
+Data {data-orientation=rows, data-icon="fa-database"}
+=====================================
+
+Row
+-------------------------------------
+
+### `r emo::ji("document")` Running activity record
+
+```{r}
+col_names <- c(
+"Date of run",
+"Total distance",
+"Moving time",
+"Average moving speed",
+"Average moving pace",
+"Max elevation",
+"Min elevation")
+
+run_dataset[,col_names] %>% kable()
+```
+
