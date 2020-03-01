@@ -1,4 +1,4 @@
-source("libraries.R")
+source("globals.R")
 source("functions.R")
 
 ## Steps:
