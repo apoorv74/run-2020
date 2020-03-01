@@ -1,0 +1,769 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2"
+xmlns:gx="http://www.google.com/kml/ext/2.2"
+xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+<open>1</open>
+<visibility>1</visibility>
+<name><![CDATA[2020-02-18 18:55]]></name>
+<atom:author><atom:name><![CDATA[OpenTracks]]></atom:name></atom:author>
+<Style id="track">
+<LineStyle><color>7f0000ff</color><width>4</width></LineStyle>
+<IconStyle>
+<scale>1.3</scale>
+<Icon><href>http://earth.google.com/images/kml-icons/track-directional/track-0.png</href></Icon>
+</IconStyle>
+</Style>
+<Style id="start"><IconStyle>
+<scale>1.3</scale>
+<Icon><href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href></Icon>
+<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+</IconStyle></Style>
+<Style id="end"><IconStyle>
+<scale>1.3</scale>
+<Icon><href>http://maps.google.com/mapfiles/kml/paddle/red-circle.png</href></Icon>
+<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+</IconStyle></Style>
+<Style id="waypoint"><IconStyle>
+<scale>1.3</scale>
+<Icon><href>http://maps.google.com/mapfiles/kml/pushpin/blue-pushpin.png</href></Icon>
+<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+</IconStyle></Style>
+<Schema id="schema">
+<gx:SimpleArrayField name="power" type="float">
+<displayName><![CDATA[Power (W)]]></displayName>
+</gx:SimpleArrayField>
+<gx:SimpleArrayField name="cadence" type="float">
+<displayName><![CDATA[Cadence (rpm)]]></displayName>
+</gx:SimpleArrayField>
+<gx:SimpleArrayField name="heart_rate" type="float">
+<displayName><![CDATA[Heart rate (bpm)]]></displayName>
+</gx:SimpleArrayField>
+</Schema>
+<Placemark>
+<name><![CDATA[2020-02-18 18:55 (Start)]]></name>
+<description><![CDATA[]]></description>
+<TimeStamp><when>2020-02-18T13:25:12.434Z</when></TimeStamp>
+<styleUrl>#start</styleUrl>
+<Point>
+<coordinates>79.91737,23.140575,384.0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[2020-02-18 18:55]]></name>
+<description><![CDATA[Mpseb ground]]></description>
+<icon><![CDATA[RUN]]></icon>
+<styleUrl>#track</styleUrl>
+<ExtendedData>
+<Data name="type"><value><![CDATA[running]]></value></Data>
+</ExtendedData>
+<gx:MultiTrack>
+<altitudeMode>absolute</altitudeMode>
+<gx:interpolate>1</gx:interpolate>
+<gx:Track>
+<when>2020-02-18T13:25:12.434Z</when>
+<gx:coord>79.91737 23.140575 384.0</gx:coord>
+<when>2020-02-18T13:25:20.000Z</when>
+<gx:coord>79.917328 23.140521 354.0</gx:coord>
+<when>2020-02-18T13:25:21.000Z</when>
+<gx:coord>79.917322 23.140489 355.0</gx:coord>
+<when>2020-02-18T13:25:27.000Z</when>
+<gx:coord>79.917314 23.140406 356.0</gx:coord>
+<when>2020-02-18T13:25:28.000Z</when>
+<gx:coord>79.917322 23.140393 356.0</gx:coord>
+<when>2020-02-18T13:25:31.000Z</when>
+<gx:coord>79.917303 23.140321 358.0</gx:coord>
+<when>2020-02-18T13:25:32.000Z</when>
+<gx:coord>79.917296 23.1403 358.0</gx:coord>
+<when>2020-02-18T13:25:35.000Z</when>
+<gx:coord>79.917283 23.140229 357.0</gx:coord>
+<when>2020-02-18T13:25:36.000Z</when>
+<gx:coord>79.917281 23.140197 357.0</gx:coord>
+<when>2020-02-18T13:25:39.000Z</when>
+<gx:coord>79.917298 23.140119 359.0</gx:coord>
+<when>2020-02-18T13:25:40.000Z</when>
+<gx:coord>79.917294 23.14009 359.0</gx:coord>
+<when>2020-02-18T13:25:43.000Z</when>
+<gx:coord>79.917287 23.140015 359.0</gx:coord>
+<when>2020-02-18T13:25:44.000Z</when>
+<gx:coord>79.917273 23.13999 359.0</gx:coord>
+<when>2020-02-18T13:25:47.000Z</when>
+<gx:coord>79.917224 23.139915 360.0</gx:coord>
+<when>2020-02-18T13:25:48.000Z</when>
+<gx:coord>79.917213 23.139885 360.0</gx:coord>
+<when>2020-02-18T13:25:51.000Z</when>
+<gx:coord>79.917194 23.139811 361.0</gx:coord>
+<when>2020-02-18T13:25:52.000Z</when>
+<gx:coord>79.917187 23.13979 360.0</gx:coord>
+<when>2020-02-18T13:25:55.000Z</when>
+<gx:coord>79.917159 23.139714 359.0</gx:coord>
+<when>2020-02-18T13:25:56.000Z</when>
+<gx:coord>79.91715 23.139684 358.0</gx:coord>
+<when>2020-02-18T13:25:59.000Z</when>
+<gx:coord>79.917123 23.13961 358.0</gx:coord>
+<when>2020-02-18T13:26:00.000Z</when>
+<gx:coord>79.917106 23.139597 356.0</gx:coord>
+<when>2020-02-18T13:26:04.000Z</when>
+<gx:coord>79.91706 23.139535 353.0</gx:coord>
+<when>2020-02-18T13:26:05.000Z</when>
+<gx:coord>79.917063 23.139509 353.0</gx:coord>
+<when>2020-02-18T13:26:07.000Z</when>
+<gx:coord>79.917049 23.13945 356.0</gx:coord>
+<when>2020-02-18T13:26:08.000Z</when>
+<gx:coord>79.917031 23.139417 356.0</gx:coord>
+<when>2020-02-18T13:26:11.000Z</when>
+<gx:coord>79.917065 23.139349 355.0</gx:coord>
+<when>2020-02-18T13:26:12.000Z</when>
+<gx:coord>79.91707 23.139321 357.0</gx:coord>
+<when>2020-02-18T13:26:17.000Z</when>
+<gx:coord>79.91715 23.139284 355.0</gx:coord>
+<when>2020-02-18T13:26:18.000Z</when>
+<gx:coord>79.917168 23.139288 356.0</gx:coord>
+<when>2020-02-18T13:26:22.000Z</when>
+<gx:coord>79.917247 23.13932 354.0</gx:coord>
+<when>2020-02-18T13:26:23.000Z</when>
+<gx:coord>79.917265 23.139321 354.0</gx:coord>
+<when>2020-02-18T13:26:27.000Z</when>
+<gx:coord>79.917334 23.139353 351.0</gx:coord>
+<when>2020-02-18T13:26:28.000Z</when>
+<gx:coord>79.917351 23.139369 351.0</gx:coord>
+<when>2020-02-18T13:26:33.000Z</when>
+<gx:coord>79.917411 23.139439 352.0</gx:coord>
+<when>2020-02-18T13:26:34.000Z</when>
+<gx:coord>79.917433 23.139454 353.0</gx:coord>
+<when>2020-02-18T13:26:37.000Z</when>
+<gx:coord>79.917501 23.139496 352.0</gx:coord>
+<when>2020-02-18T13:26:38.000Z</when>
+<gx:coord>79.917528 23.139509 352.0</gx:coord>
+<when>2020-02-18T13:26:41.000Z</when>
+<gx:coord>79.91759 23.139556 351.0</gx:coord>
+<when>2020-02-18T13:26:42.000Z</when>
+<gx:coord>79.917608 23.139571 351.0</gx:coord>
+<when>2020-02-18T13:26:45.000Z</when>
+<gx:coord>79.91766 23.139625 350.0</gx:coord>
+<when>2020-02-18T13:26:46.000Z</when>
+<gx:coord>79.917666 23.139647 348.0</gx:coord>
+<when>2020-02-18T13:26:50.000Z</when>
+<gx:coord>79.917666 23.139733 348.0</gx:coord>
+<when>2020-02-18T13:26:51.000Z</when>
+<gx:coord>79.917673 23.139762 349.0</gx:coord>
+<when>2020-02-18T13:26:53.000Z</when>
+<gx:coord>79.917733 23.139831 350.0</gx:coord>
+<when>2020-02-18T13:26:54.000Z</when>
+<gx:coord>79.917756 23.13987 350.0</gx:coord>
+<when>2020-02-18T13:26:56.000Z</when>
+<gx:coord>79.917793 23.139943 351.0</gx:coord>
+<when>2020-02-18T13:26:57.000Z</when>
+<gx:coord>79.917801 23.139974 350.0</gx:coord>
+<when>2020-02-18T13:27:00.000Z</when>
+<gx:coord>79.917837 23.140054 349.0</gx:coord>
+<when>2020-02-18T13:27:01.000Z</when>
+<gx:coord>79.91783 23.140075 350.0</gx:coord>
+<when>2020-02-18T13:27:04.000Z</when>
+<gx:coord>79.917827 23.140152 352.0</gx:coord>
+<when>2020-02-18T13:27:05.000Z</when>
+<gx:coord>79.917825 23.140182 352.0</gx:coord>
+<when>2020-02-18T13:27:08.000Z</when>
+<gx:coord>79.917803 23.140256 352.0</gx:coord>
+<when>2020-02-18T13:27:09.000Z</when>
+<gx:coord>79.917811 23.140285 353.0</gx:coord>
+<when>2020-02-18T13:27:13.000Z</when>
+<gx:coord>79.917819 23.140371 353.0</gx:coord>
+<when>2020-02-18T13:27:14.000Z</when>
+<gx:coord>79.917819 23.140393 353.0</gx:coord>
+<when>2020-02-18T13:27:17.000Z</when>
+<gx:coord>79.917826 23.140466 353.0</gx:coord>
+<when>2020-02-18T13:27:18.000Z</when>
+<gx:coord>79.917832 23.140494 354.0</gx:coord>
+<when>2020-02-18T13:27:23.000Z</when>
+<gx:coord>79.917789 23.140567 356.0</gx:coord>
+<when>2020-02-18T13:27:24.000Z</when>
+<gx:coord>79.91777 23.140574 355.0</gx:coord>
+<when>2020-02-18T13:27:28.000Z</when>
+<gx:coord>79.917682 23.140585 354.0</gx:coord>
+<when>2020-02-18T13:27:29.000Z</when>
+<gx:coord>79.917659 23.140593 354.0</gx:coord>
+<when>2020-02-18T13:27:34.000Z</when>
+<gx:coord>79.917597 23.140582 351.0</gx:coord>
+<when>2020-02-18T13:27:35.000Z</when>
+<gx:coord>79.917555 23.140596 351.0</gx:coord>
+<when>2020-02-18T13:27:38.000Z</when>
+<gx:coord>79.917476 23.140604 353.0</gx:coord>
+<when>2020-02-18T13:27:39.000Z</when>
+<gx:coord>79.917454 23.140596 354.0</gx:coord>
+<when>2020-02-18T13:27:43.000Z</when>
+<gx:coord>79.917392 23.140538 355.0</gx:coord>
+<when>2020-02-18T13:27:44.000Z</when>
+<gx:coord>79.917391 23.140517 354.0</gx:coord>
+<when>2020-02-18T13:27:47.000Z</when>
+<gx:coord>79.917387 23.140446 354.0</gx:coord>
+<when>2020-02-18T13:27:48.000Z</when>
+<gx:coord>79.917384 23.140416 354.0</gx:coord>
+<when>2020-02-18T13:27:51.000Z</when>
+<gx:coord>79.917382 23.140339 356.0</gx:coord>
+<when>2020-02-18T13:27:52.000Z</when>
+<gx:coord>79.917367 23.140302 357.0</gx:coord>
+<when>2020-02-18T13:27:54.000Z</when>
+<gx:coord>79.91734 23.140236 358.0</gx:coord>
+<when>2020-02-18T13:27:55.000Z</when>
+<gx:coord>79.917339 23.140201 358.0</gx:coord>
+<when>2020-02-18T13:27:57.000Z</when>
+<gx:coord>79.917314 23.140138 357.0</gx:coord>
+<when>2020-02-18T13:27:58.000Z</when>
+<gx:coord>79.917306 23.14011 358.0</gx:coord>
+<when>2020-02-18T13:28:01.000Z</when>
+<gx:coord>79.917277 23.140046 358.0</gx:coord>
+<when>2020-02-18T13:28:02.000Z</when>
+<gx:coord>79.917269 23.140024 358.0</gx:coord>
+<when>2020-02-18T13:28:05.000Z</when>
+<gx:coord>79.917261 23.139945 358.0</gx:coord>
+<when>2020-02-18T13:28:06.000Z</when>
+<gx:coord>79.917251 23.139915 358.0</gx:coord>
+<when>2020-02-18T13:28:08.000Z</when>
+<gx:coord>79.917249 23.13985 359.0</gx:coord>
+<when>2020-02-18T13:28:09.000Z</when>
+<gx:coord>79.917238 23.139823 358.0</gx:coord>
+<when>2020-02-18T13:28:13.000Z</when>
+<gx:coord>79.917225 23.139733 358.0</gx:coord>
+<when>2020-02-18T13:28:14.000Z</when>
+<gx:coord>79.917226 23.139708 358.0</gx:coord>
+<when>2020-02-18T13:28:16.000Z</when>
+<gx:coord>79.917217 23.139647 358.0</gx:coord>
+<when>2020-02-18T13:28:17.000Z</when>
+<gx:coord>79.917219 23.139616 358.0</gx:coord>
+<when>2020-02-18T13:28:20.000Z</when>
+<gx:coord>79.917151 23.139576 354.0</gx:coord>
+<when>2020-02-18T13:28:21.000Z</when>
+<gx:coord>79.917137 23.139555 355.0</gx:coord>
+<when>2020-02-18T13:28:23.000Z</when>
+<gx:coord>79.917108 23.139495 356.0</gx:coord>
+<when>2020-02-18T13:28:24.000Z</when>
+<gx:coord>79.917098 23.139467 357.0</gx:coord>
+<when>2020-02-18T13:28:27.000Z</when>
+<gx:coord>79.91706 23.139389 358.0</gx:coord>
+<when>2020-02-18T13:28:28.000Z</when>
+<gx:coord>79.91706 23.139361 358.0</gx:coord>
+<when>2020-02-18T13:28:31.000Z</when>
+<gx:coord>79.917102 23.139298 357.0</gx:coord>
+<when>2020-02-18T13:28:32.000Z</when>
+<gx:coord>79.917122 23.139288 358.0</gx:coord>
+<when>2020-02-18T13:28:36.000Z</when>
+<gx:coord>79.917204 23.13927 359.0</gx:coord>
+<when>2020-02-18T13:28:37.000Z</when>
+<gx:coord>79.917224 23.139269 359.0</gx:coord>
+<when>2020-02-18T13:28:41.000Z</when>
+<gx:coord>79.917309 23.139296 352.0</gx:coord>
+<when>2020-02-18T13:28:42.000Z</when>
+<gx:coord>79.917328 23.139309 351.0</gx:coord>
+<when>2020-02-18T13:28:45.000Z</when>
+<gx:coord>79.917389 23.139349 352.0</gx:coord>
+<when>2020-02-18T13:28:46.000Z</when>
+<gx:coord>79.917408 23.139364 351.0</gx:coord>
+<when>2020-02-18T13:28:49.000Z</when>
+<gx:coord>79.917467 23.139412 350.0</gx:coord>
+<when>2020-02-18T13:28:50.000Z</when>
+<gx:coord>79.917484 23.139429 350.0</gx:coord>
+<when>2020-02-18T13:28:53.000Z</when>
+<gx:coord>79.91754 23.139478 349.0</gx:coord>
+<when>2020-02-18T13:28:54.000Z</when>
+<gx:coord>79.917558 23.139496 348.0</gx:coord>
+<when>2020-02-18T13:28:57.000Z</when>
+<gx:coord>79.917603 23.139559 349.0</gx:coord>
+<when>2020-02-18T13:28:58.000Z</when>
+<gx:coord>79.917621 23.139585 348.0</gx:coord>
+<when>2020-02-18T13:29:01.000Z</when>
+<gx:coord>79.91767 23.13966 349.0</gx:coord>
+<when>2020-02-18T13:29:02.000Z</when>
+<gx:coord>79.917685 23.139688 348.0</gx:coord>
+<when>2020-02-18T13:29:04.000Z</when>
+<gx:coord>79.917713 23.139744 348.0</gx:coord>
+<when>2020-02-18T13:29:05.000Z</when>
+<gx:coord>79.917725 23.139771 348.0</gx:coord>
+<when>2020-02-18T13:29:07.000Z</when>
+<gx:coord>79.917747 23.139836 349.0</gx:coord>
+<when>2020-02-18T13:29:08.000Z</when>
+<gx:coord>79.917753 23.139866 348.0</gx:coord>
+<when>2020-02-18T13:29:10.000Z</when>
+<gx:coord>79.917774 23.139936 347.0</gx:coord>
+<when>2020-02-18T13:29:11.000Z</when>
+<gx:coord>79.917787 23.139967 347.0</gx:coord>
+<when>2020-02-18T13:29:13.000Z</when>
+<gx:coord>79.917807 23.140028 346.0</gx:coord>
+<when>2020-02-18T13:29:14.000Z</when>
+<gx:coord>79.917817 23.14006 346.0</gx:coord>
+<when>2020-02-18T13:29:17.000Z</when>
+<gx:coord>79.917834 23.140147 349.0</gx:coord>
+<when>2020-02-18T13:29:18.000Z</when>
+<gx:coord>79.91784 23.140174 349.0</gx:coord>
+<when>2020-02-18T13:29:21.000Z</when>
+<gx:coord>79.917843 23.140253 351.0</gx:coord>
+<when>2020-02-18T13:29:22.000Z</when>
+<gx:coord>79.917848 23.14028 352.0</gx:coord>
+<when>2020-02-18T13:29:25.000Z</when>
+<gx:coord>79.917858 23.140361 352.0</gx:coord>
+<when>2020-02-18T13:29:26.000Z</when>
+<gx:coord>79.91786 23.140389 353.0</gx:coord>
+<when>2020-02-18T13:29:29.000Z</when>
+<gx:coord>79.917875 23.140468 354.0</gx:coord>
+<when>2020-02-18T13:29:30.000Z</when>
+<gx:coord>79.917876 23.140492 354.0</gx:coord>
+<when>2020-02-18T13:29:34.000Z</when>
+<gx:coord>79.917853 23.140574 357.0</gx:coord>
+<when>2020-02-18T13:29:35.000Z</when>
+<gx:coord>79.917834 23.140586 358.0</gx:coord>
+<when>2020-02-18T13:29:38.000Z</when>
+<gx:coord>79.917764 23.140608 356.0</gx:coord>
+<when>2020-02-18T13:29:39.000Z</when>
+<gx:coord>79.917735 23.140616 356.0</gx:coord>
+<when>2020-02-18T13:29:42.000Z</when>
+<gx:coord>79.917653 23.140622 354.0</gx:coord>
+<when>2020-02-18T13:29:43.000Z</when>
+<gx:coord>79.917623 23.140625 354.0</gx:coord>
+<when>2020-02-18T13:29:46.000Z</when>
+<gx:coord>79.917544 23.140631 352.0</gx:coord>
+<when>2020-02-18T13:29:47.000Z</when>
+<gx:coord>79.91752 23.14064 353.0</gx:coord>
+<when>2020-02-18T13:29:51.000Z</when>
+<gx:coord>79.917433 23.140631 355.0</gx:coord>
+<when>2020-02-18T13:29:52.000Z</when>
+<gx:coord>79.917416 23.140615 356.0</gx:coord>
+<when>2020-02-18T13:29:55.000Z</when>
+<gx:coord>79.917382 23.140553 356.0</gx:coord>
+<when>2020-02-18T13:29:56.000Z</when>
+<gx:coord>79.917371 23.140532 357.0</gx:coord>
+<when>2020-02-18T13:29:59.000Z</when>
+<gx:coord>79.917341 23.140461 359.0</gx:coord>
+<when>2020-02-18T13:30:00.000Z</when>
+<gx:coord>79.917329 23.140436 359.0</gx:coord>
+<when>2020-02-18T13:30:03.000Z</when>
+<gx:coord>79.917297 23.140353 358.0</gx:coord>
+<when>2020-02-18T13:30:04.000Z</when>
+<gx:coord>79.917286 23.140325 358.0</gx:coord>
+<when>2020-02-18T13:30:07.000Z</when>
+<gx:coord>79.917265 23.140243 358.0</gx:coord>
+<when>2020-02-18T13:30:08.000Z</when>
+<gx:coord>79.91726 23.140219 358.0</gx:coord>
+<when>2020-02-18T13:30:11.000Z</when>
+<gx:coord>79.917248 23.140142 358.0</gx:coord>
+<when>2020-02-18T13:30:12.000Z</when>
+<gx:coord>79.917236 23.140119 358.0</gx:coord>
+<when>2020-02-18T13:30:15.000Z</when>
+<gx:coord>79.917202 23.140045 358.0</gx:coord>
+<when>2020-02-18T13:30:16.000Z</when>
+<gx:coord>79.917189 23.140016 359.0</gx:coord>
+<when>2020-02-18T13:30:18.000Z</when>
+<gx:coord>79.917177 23.139953 358.0</gx:coord>
+<when>2020-02-18T13:30:19.000Z</when>
+<gx:coord>79.917167 23.139925 360.0</gx:coord>
+<when>2020-02-18T13:30:22.000Z</when>
+<gx:coord>79.917145 23.139855 360.0</gx:coord>
+<when>2020-02-18T13:30:23.000Z</when>
+<gx:coord>79.917137 23.139828 360.0</gx:coord>
+<when>2020-02-18T13:30:26.000Z</when>
+<gx:coord>79.917108 23.139755 359.0</gx:coord>
+<when>2020-02-18T13:30:27.000Z</when>
+<gx:coord>79.917103 23.139728 358.0</gx:coord>
+<when>2020-02-18T13:30:30.000Z</when>
+<gx:coord>79.917072 23.139651 358.0</gx:coord>
+<when>2020-02-18T13:30:31.000Z</when>
+<gx:coord>79.917058 23.139627 358.0</gx:coord>
+<when>2020-02-18T13:30:34.000Z</when>
+<gx:coord>79.917024 23.139564 360.0</gx:coord>
+<when>2020-02-18T13:30:35.000Z</when>
+<gx:coord>79.917019 23.139536 360.0</gx:coord>
+<when>2020-02-18T13:30:38.000Z</when>
+<gx:coord>79.917001 23.13946 360.0</gx:coord>
+<when>2020-02-18T13:30:39.000Z</when>
+<gx:coord>79.917006 23.139433 360.0</gx:coord>
+<when>2020-02-18T13:30:42.000Z</when>
+<gx:coord>79.917049 23.13936 359.0</gx:coord>
+<when>2020-02-18T13:30:43.000Z</when>
+<gx:coord>79.917073 23.13934 358.0</gx:coord>
+<when>2020-02-18T13:30:46.000Z</when>
+<gx:coord>79.917146 23.139311 359.0</gx:coord>
+<when>2020-02-18T13:30:47.000Z</when>
+<gx:coord>79.917172 23.139311 358.0</gx:coord>
+<when>2020-02-18T13:30:50.000Z</when>
+<gx:coord>79.917248 23.13934 356.0</gx:coord>
+<when>2020-02-18T13:30:51.000Z</when>
+<gx:coord>79.917275 23.139353 357.0</gx:coord>
+<when>2020-02-18T13:30:54.000Z</when>
+<gx:coord>79.917343 23.139388 358.0</gx:coord>
+<when>2020-02-18T13:30:55.000Z</when>
+<gx:coord>79.917366 23.1394 358.0</gx:coord>
+<when>2020-02-18T13:30:58.000Z</when>
+<gx:coord>79.917431 23.139442 358.0</gx:coord>
+<when>2020-02-18T13:30:59.000Z</when>
+<gx:coord>79.917454 23.139455 357.0</gx:coord>
+<when>2020-02-18T13:31:02.000Z</when>
+<gx:coord>79.917514 23.139498 355.0</gx:coord>
+<when>2020-02-18T13:31:03.000Z</when>
+<gx:coord>79.917537 23.139517 355.0</gx:coord>
+<when>2020-02-18T13:31:06.000Z</when>
+<gx:coord>79.917596 23.139569 355.0</gx:coord>
+<when>2020-02-18T13:31:07.000Z</when>
+<gx:coord>79.917618 23.139589 355.0</gx:coord>
+<when>2020-02-18T13:31:10.000Z</when>
+<gx:coord>79.917663 23.139647 355.0</gx:coord>
+<when>2020-02-18T13:31:11.000Z</when>
+<gx:coord>79.917678 23.139666 356.0</gx:coord>
+<when>2020-02-18T13:31:14.000Z</when>
+<gx:coord>79.91771 23.139735 355.0</gx:coord>
+<when>2020-02-18T13:31:15.000Z</when>
+<gx:coord>79.917712 23.139757 355.0</gx:coord>
+<when>2020-02-18T13:31:18.000Z</when>
+<gx:coord>79.917727 23.139845 354.0</gx:coord>
+<when>2020-02-18T13:31:19.000Z</when>
+<gx:coord>79.917744 23.139885 352.0</gx:coord>
+<when>2020-02-18T13:31:21.000Z</when>
+<gx:coord>79.917745 23.139949 353.0</gx:coord>
+<when>2020-02-18T13:31:22.000Z</when>
+<gx:coord>79.917754 23.139975 353.0</gx:coord>
+<when>2020-02-18T13:31:26.000Z</when>
+<gx:coord>79.917785 23.140042 352.0</gx:coord>
+<when>2020-02-18T13:31:27.000Z</when>
+<gx:coord>79.917795 23.140065 352.0</gx:coord>
+<when>2020-02-18T13:31:30.000Z</when>
+<gx:coord>79.917817 23.140145 353.0</gx:coord>
+<when>2020-02-18T13:31:31.000Z</when>
+<gx:coord>79.917819 23.140172 352.0</gx:coord>
+<when>2020-02-18T13:31:34.000Z</when>
+<gx:coord>79.917835 23.140243 355.0</gx:coord>
+<when>2020-02-18T13:31:35.000Z</when>
+<gx:coord>79.917838 23.140269 354.0</gx:coord>
+<when>2020-02-18T13:31:38.000Z</when>
+<gx:coord>79.917845 23.14035 355.0</gx:coord>
+<when>2020-02-18T13:31:39.000Z</when>
+<gx:coord>79.917842 23.140376 354.0</gx:coord>
+<when>2020-02-18T13:31:43.000Z</when>
+<gx:coord>79.917879 23.140449 356.0</gx:coord>
+<when>2020-02-18T13:31:44.000Z</when>
+<gx:coord>79.917873 23.140485 357.0</gx:coord>
+<when>2020-02-18T13:31:47.000Z</when>
+<gx:coord>79.917829 23.14056 359.0</gx:coord>
+<when>2020-02-18T13:31:48.000Z</when>
+<gx:coord>79.917811 23.140573 362.0</gx:coord>
+<when>2020-02-18T13:31:52.000Z</when>
+<gx:coord>79.917724 23.140595 359.0</gx:coord>
+<when>2020-02-18T13:31:53.000Z</when>
+<gx:coord>79.917695 23.140599 359.0</gx:coord>
+<when>2020-02-18T13:31:56.000Z</when>
+<gx:coord>79.917621 23.140624 357.0</gx:coord>
+<when>2020-02-18T13:31:57.000Z</when>
+<gx:coord>79.917598 23.140629 355.0</gx:coord>
+<when>2020-02-18T13:32:00.000Z</when>
+<gx:coord>79.917513 23.140638 357.0</gx:coord>
+<when>2020-02-18T13:32:01.000Z</when>
+<gx:coord>79.917488 23.140638 357.0</gx:coord>
+<when>2020-02-18T13:32:05.000Z</when>
+<gx:coord>79.917426 23.140597 355.0</gx:coord>
+<when>2020-02-18T13:32:06.000Z</when>
+<gx:coord>79.917414 23.140575 354.0</gx:coord>
+<when>2020-02-18T13:32:09.000Z</when>
+<gx:coord>79.91739 23.140512 354.0</gx:coord>
+<when>2020-02-18T13:32:10.000Z</when>
+<gx:coord>79.917382 23.140488 355.0</gx:coord>
+<when>2020-02-18T13:32:14.000Z</when>
+<gx:coord>79.917349 23.140406 356.0</gx:coord>
+<when>2020-02-18T13:32:15.000Z</when>
+<gx:coord>79.917347 23.140381 356.0</gx:coord>
+<when>2020-02-18T13:32:19.000Z</when>
+<gx:coord>79.917338 23.1403 358.0</gx:coord>
+<when>2020-02-18T13:32:20.000Z</when>
+<gx:coord>79.91733 23.140277 357.0</gx:coord>
+<when>2020-02-18T13:32:23.000Z</when>
+<gx:coord>79.917298 23.140204 356.0</gx:coord>
+<when>2020-02-18T13:32:24.000Z</when>
+<gx:coord>79.917284 23.140179 355.0</gx:coord>
+<when>2020-02-18T13:32:26.000Z</when>
+<gx:coord>79.91724 23.140119 354.0</gx:coord>
+<when>2020-02-18T13:32:27.000Z</when>
+<gx:coord>79.917218 23.140085 355.0</gx:coord>
+<when>2020-02-18T13:32:29.000Z</when>
+<gx:coord>79.917173 23.140019 355.0</gx:coord>
+<when>2020-02-18T13:32:30.000Z</when>
+<gx:coord>79.917148 23.139992 356.0</gx:coord>
+<when>2020-02-18T13:32:33.000Z</when>
+<gx:coord>79.917119 23.13992 356.0</gx:coord>
+<when>2020-02-18T13:32:34.000Z</when>
+<gx:coord>79.917109 23.139899 356.0</gx:coord>
+<when>2020-02-18T13:32:37.000Z</when>
+<gx:coord>79.917071 23.13984 356.0</gx:coord>
+<when>2020-02-18T13:32:38.000Z</when>
+<gx:coord>79.917057 23.139822 356.0</gx:coord>
+<when>2020-02-18T13:32:42.000Z</when>
+<gx:coord>79.916997 23.139751 356.0</gx:coord>
+<when>2020-02-18T13:32:43.000Z</when>
+<gx:coord>79.91698 23.139736 356.0</gx:coord>
+<when>2020-02-18T13:32:47.000Z</when>
+<gx:coord>79.916909 23.139676 356.0</gx:coord>
+<when>2020-02-18T13:32:48.000Z</when>
+<gx:coord>79.916931 23.139616 355.0</gx:coord>
+<when>2020-02-18T13:32:49.000Z</when>
+<gx:coord>79.916955 23.139559 355.0</gx:coord>
+<when>2020-02-18T13:32:50.000Z</when>
+<gx:coord>79.916977 23.139514 355.0</gx:coord>
+<when>2020-02-18T13:32:52.000Z</when>
+<gx:coord>79.916991 23.13944 354.0</gx:coord>
+<when>2020-02-18T13:32:53.000Z</when>
+<gx:coord>79.916997 23.139409 355.0</gx:coord>
+<when>2020-02-18T13:32:56.000Z</when>
+<gx:coord>79.917016 23.139329 355.0</gx:coord>
+<when>2020-02-18T13:32:57.000Z</when>
+<gx:coord>79.917033 23.139319 357.0</gx:coord>
+<when>2020-02-18T13:32:59.000Z</when>
+<gx:coord>79.9171 23.139311 358.0</gx:coord>
+<when>2020-02-18T13:33:00.000Z</when>
+<gx:coord>79.91713 23.139309 357.0</gx:coord>
+<when>2020-02-18T13:33:03.000Z</when>
+<gx:coord>79.917223 23.139318 358.0</gx:coord>
+<when>2020-02-18T13:33:04.000Z</when>
+<gx:coord>79.917252 23.139331 358.0</gx:coord>
+<when>2020-02-18T13:33:07.000Z</when>
+<gx:coord>79.917323 23.139358 358.0</gx:coord>
+<when>2020-02-18T13:33:08.000Z</when>
+<gx:coord>79.917345 23.139368 358.0</gx:coord>
+<when>2020-02-18T13:33:12.000Z</when>
+<gx:coord>79.917417 23.139411 355.0</gx:coord>
+<when>2020-02-18T13:33:13.000Z</when>
+<gx:coord>79.917438 23.139421 357.0</gx:coord>
+<when>2020-02-18T13:33:17.000Z</when>
+<gx:coord>79.917513 23.139462 357.0</gx:coord>
+<when>2020-02-18T13:33:18.000Z</when>
+<gx:coord>79.917532 23.139475 357.0</gx:coord>
+<when>2020-02-18T13:33:22.000Z</when>
+<gx:coord>79.917602 23.139531 357.0</gx:coord>
+<when>2020-02-18T13:33:23.000Z</when>
+<gx:coord>79.917621 23.139546 357.0</gx:coord>
+<when>2020-02-18T13:33:26.000Z</when>
+<gx:coord>79.917666 23.1396 357.0</gx:coord>
+<when>2020-02-18T13:33:27.000Z</when>
+<gx:coord>79.917683 23.139617 357.0</gx:coord>
+<when>2020-02-18T13:33:30.000Z</when>
+<gx:coord>79.91773 23.139668 357.0</gx:coord>
+<when>2020-02-18T13:33:31.000Z</when>
+<gx:coord>79.917745 23.139686 357.0</gx:coord>
+<when>2020-02-18T13:33:32.000Z</when>
+<gx:coord>79.917761 23.139703 357.0</gx:coord>
+<when>2020-02-18T13:35:58.000Z</when>
+<gx:coord>79.917532 23.139898 367.0</gx:coord>
+<when>2020-02-18T13:36:00.000Z</when>
+<gx:coord>79.917581 23.139955 359.0</gx:coord>
+<when>2020-02-18T13:36:01.000Z</when>
+<gx:coord>79.9176 23.139975 357.0</gx:coord>
+<when>2020-02-18T13:36:04.000Z</when>
+<gx:coord>79.917679 23.140025 355.0</gx:coord>
+<when>2020-02-18T13:36:05.000Z</when>
+<gx:coord>79.917687 23.140035 354.0</gx:coord>
+<when>2020-02-18T13:36:07.000Z</when>
+<gx:coord>79.917738 23.1401 354.0</gx:coord>
+<when>2020-02-18T13:36:08.000Z</when>
+<gx:coord>79.917751 23.140127 354.0</gx:coord>
+<when>2020-02-18T13:36:10.000Z</when>
+<gx:coord>79.917782 23.140186 354.0</gx:coord>
+<when>2020-02-18T13:36:11.000Z</when>
+<gx:coord>79.917787 23.140212 353.0</gx:coord>
+<when>2020-02-18T13:36:14.000Z</when>
+<gx:coord>79.917779 23.140295 353.0</gx:coord>
+<when>2020-02-18T13:36:15.000Z</when>
+<gx:coord>79.917767 23.140314 353.0</gx:coord>
+<when>2020-02-18T13:36:19.000Z</when>
+<gx:coord>79.917782 23.140397 353.0</gx:coord>
+<when>2020-02-18T13:36:20.000Z</when>
+<gx:coord>79.917798 23.14042 352.0</gx:coord>
+<when>2020-02-18T13:36:24.000Z</when>
+<gx:coord>79.917829 23.140499 353.0</gx:coord>
+<when>2020-02-18T13:36:25.000Z</when>
+<gx:coord>79.917861 23.140503 354.0</gx:coord>
+<when>2020-02-18T13:36:28.000Z</when>
+<gx:coord>79.91789 23.140574 352.0</gx:coord>
+<when>2020-02-18T13:36:29.000Z</when>
+<gx:coord>79.917869 23.140597 352.0</gx:coord>
+<when>2020-02-18T13:36:32.000Z</when>
+<gx:coord>79.917773 23.140611 353.0</gx:coord>
+<when>2020-02-18T13:36:33.000Z</when>
+<gx:coord>79.917745 23.140612 352.0</gx:coord>
+<when>2020-02-18T13:36:36.000Z</when>
+<gx:coord>79.917659 23.140627 352.0</gx:coord>
+<when>2020-02-18T13:36:37.000Z</when>
+<gx:coord>79.917628 23.14063 352.0</gx:coord>
+<when>2020-02-18T13:36:40.000Z</when>
+<gx:coord>79.917549 23.140636 352.0</gx:coord>
+<when>2020-02-18T13:36:41.000Z</when>
+<gx:coord>79.917525 23.140642 352.0</gx:coord>
+<when>2020-02-18T13:36:44.000Z</when>
+<gx:coord>79.91745 23.140649 352.0</gx:coord>
+<when>2020-02-18T13:36:45.000Z</when>
+<gx:coord>79.917424 23.140647 352.0</gx:coord>
+<when>2020-02-18T13:36:49.000Z</when>
+<gx:coord>79.91734 23.14062 353.0</gx:coord>
+<when>2020-02-18T13:36:50.000Z</when>
+<gx:coord>79.917336 23.140598 353.0</gx:coord>
+<when>2020-02-18T13:36:54.000Z</when>
+<gx:coord>79.9173 23.140517 354.0</gx:coord>
+<when>2020-02-18T13:36:55.000Z</when>
+<gx:coord>79.917287 23.140495 355.0</gx:coord>
+<when>2020-02-18T13:36:58.000Z</when>
+<gx:coord>79.917252 23.140426 355.0</gx:coord>
+<when>2020-02-18T13:36:59.000Z</when>
+<gx:coord>79.917249 23.14041 354.0</gx:coord>
+<when>2020-02-18T13:37:03.000Z</when>
+<gx:coord>79.917243 23.140326 354.0</gx:coord>
+<when>2020-02-18T13:37:04.000Z</when>
+<gx:coord>79.917246 23.140302 354.0</gx:coord>
+<when>2020-02-18T13:37:07.000Z</when>
+<gx:coord>79.917244 23.140221 356.0</gx:coord>
+<when>2020-02-18T13:37:08.000Z</when>
+<gx:coord>79.91723 23.140193 355.0</gx:coord>
+<when>2020-02-18T13:37:11.000Z</when>
+<gx:coord>79.917212 23.140114 354.0</gx:coord>
+<when>2020-02-18T13:37:12.000Z</when>
+<gx:coord>79.917203 23.140091 353.0</gx:coord>
+<when>2020-02-18T13:37:15.000Z</when>
+<gx:coord>79.917179 23.140034 354.0</gx:coord>
+<when>2020-02-18T13:37:16.000Z</when>
+<gx:coord>79.917169 23.140005 354.0</gx:coord>
+<when>2020-02-18T13:37:19.000Z</when>
+<gx:coord>79.917147 23.139925 353.0</gx:coord>
+<when>2020-02-18T13:37:20.000Z</when>
+<gx:coord>79.917145 23.139892 352.0</gx:coord>
+<when>2020-02-18T13:37:23.000Z</when>
+<gx:coord>79.917139 23.139817 353.0</gx:coord>
+<when>2020-02-18T13:37:24.000Z</when>
+<gx:coord>79.917135 23.139796 352.0</gx:coord>
+<when>2020-02-18T13:37:27.000Z</when>
+<gx:coord>79.917126 23.139728 353.0</gx:coord>
+<when>2020-02-18T13:37:28.000Z</when>
+<gx:coord>79.917117 23.139702 353.0</gx:coord>
+<when>2020-02-18T13:37:31.000Z</when>
+<gx:coord>79.917085 23.139631 353.0</gx:coord>
+<when>2020-02-18T13:37:32.000Z</when>
+<gx:coord>79.917071 23.139607 353.0</gx:coord>
+<when>2020-02-18T13:37:35.000Z</when>
+<gx:coord>79.917038 23.13954 354.0</gx:coord>
+<when>2020-02-18T13:37:36.000Z</when>
+<gx:coord>79.917029 23.139514 355.0</gx:coord>
+<when>2020-02-18T13:37:39.000Z</when>
+<gx:coord>79.917009 23.139442 355.0</gx:coord>
+<when>2020-02-18T13:37:40.000Z</when>
+<gx:coord>79.917007 23.139419 354.0</gx:coord>
+<when>2020-02-18T13:37:43.000Z</when>
+<gx:coord>79.917032 23.139351 355.0</gx:coord>
+<when>2020-02-18T13:37:44.000Z</when>
+<gx:coord>79.917045 23.13933 354.0</gx:coord>
+<when>2020-02-18T13:37:48.000Z</when>
+<gx:coord>79.917087 23.139265 353.0</gx:coord>
+<when>2020-02-18T13:37:49.000Z</when>
+<gx:coord>79.917114 23.139256 354.0</gx:coord>
+<when>2020-02-18T13:37:53.000Z</when>
+<gx:coord>79.917204 23.139269 352.0</gx:coord>
+<when>2020-02-18T13:37:54.000Z</when>
+<gx:coord>79.917216 23.139267 351.0</gx:coord>
+<when>2020-02-18T13:37:58.000Z</when>
+<gx:coord>79.917293 23.139299 351.0</gx:coord>
+<when>2020-02-18T13:37:59.000Z</when>
+<gx:coord>79.917312 23.139301 352.0</gx:coord>
+<when>2020-02-18T13:38:04.000Z</when>
+<gx:coord>79.917388 23.139339 354.0</gx:coord>
+<when>2020-02-18T13:38:05.000Z</when>
+<gx:coord>79.917408 23.139363 353.0</gx:coord>
+<when>2020-02-18T13:38:08.000Z</when>
+<gx:coord>79.917478 23.139419 354.0</gx:coord>
+<when>2020-02-18T13:38:09.000Z</when>
+<gx:coord>79.917496 23.139435 353.0</gx:coord>
+<when>2020-02-18T13:38:13.000Z</when>
+<gx:coord>79.917565 23.139492 351.0</gx:coord>
+<when>2020-02-18T13:38:14.000Z</when>
+<gx:coord>79.917582 23.139525 351.0</gx:coord>
+<when>2020-02-18T13:38:16.000Z</when>
+<gx:coord>79.91762 23.139579 352.0</gx:coord>
+<when>2020-02-18T13:38:17.000Z</when>
+<gx:coord>79.917638 23.139601 352.0</gx:coord>
+<when>2020-02-18T13:38:20.000Z</when>
+<gx:coord>79.917704 23.139649 350.0</gx:coord>
+<when>2020-02-18T13:38:21.000Z</when>
+<gx:coord>79.917721 23.139678 352.0</gx:coord>
+<when>2020-02-18T13:38:24.000Z</when>
+<gx:coord>79.917753 23.139762 352.0</gx:coord>
+<when>2020-02-18T13:38:25.000Z</when>
+<gx:coord>79.917762 23.139786 350.0</gx:coord>
+<when>2020-02-18T13:38:28.000Z</when>
+<gx:coord>79.917764 23.139873 350.0</gx:coord>
+<when>2020-02-18T13:38:29.000Z</when>
+<gx:coord>79.917765 23.139897 351.0</gx:coord>
+<when>2020-02-18T13:38:33.000Z</when>
+<gx:coord>79.917779 23.139986 351.0</gx:coord>
+<when>2020-02-18T13:38:34.000Z</when>
+<gx:coord>79.917784 23.140001 352.0</gx:coord>
+<when>2020-02-18T13:38:37.000Z</when>
+<gx:coord>79.917799 23.140073 354.0</gx:coord>
+<when>2020-02-18T13:38:38.000Z</when>
+<gx:coord>79.917795 23.140097 354.0</gx:coord>
+<when>2020-02-18T13:38:41.000Z</when>
+<gx:coord>79.917839 23.140159 355.0</gx:coord>
+<when>2020-02-18T13:38:42.000Z</when>
+<gx:coord>79.917848 23.140186 355.0</gx:coord>
+<when>2020-02-18T13:38:45.000Z</when>
+<gx:coord>79.917851 23.140265 355.0</gx:coord>
+<when>2020-02-18T13:38:46.000Z</when>
+<gx:coord>79.917853 23.14029 354.0</gx:coord>
+<when>2020-02-18T13:38:49.000Z</when>
+<gx:coord>79.917855 23.140363 354.0</gx:coord>
+<when>2020-02-18T13:38:50.000Z</when>
+<gx:coord>79.917856 23.140388 354.0</gx:coord>
+<when>2020-02-18T13:38:55.000Z</when>
+<gx:coord>79.917937 23.140432 355.0</gx:coord>
+<when>2020-02-18T13:38:56.000Z</when>
+<gx:coord>79.917961 23.140434 355.0</gx:coord>
+<when>2020-02-18T13:39:00.000Z</when>
+<gx:coord>79.918035 23.140475 355.0</gx:coord>
+<when>2020-02-18T13:39:01.000Z</when>
+<gx:coord>79.91804 23.140499 355.0</gx:coord>
+<when>2020-02-18T13:39:04.000Z</when>
+<gx:coord>79.918023 23.140584 355.0</gx:coord>
+<when>2020-02-18T13:39:05.000Z</when>
+<gx:coord>79.918006 23.140621 355.0</gx:coord>
+<when>2020-02-18T13:39:07.000Z</when>
+<gx:coord>79.918001 23.14066 355.0</gx:coord>
+<when>2020-02-18T13:39:59.000Z</when>
+<gx:coord>79.91722 23.139455 350.0</gx:coord>
+<when>2020-02-18T13:40:04.000Z</when>
+<gx:coord>79.917296 23.139446 348.0</gx:coord>
+<ExtendedData>
+<SchemaData schemaUrl="#schema">
+</SchemaData>
+</ExtendedData>
+</gx:Track>
+</gx:MultiTrack>
+</Placemark>
+<Placemark>
+<name><![CDATA[2020-02-18 18:55 (End)]]></name>
+<description><![CDATA[OpenTracks
+
+Name: 2020-02-18 18:55
+Activity type: running
+Description: Mpseb ground
+Total distance: 2.09 km (1.3 mi)
+Total time: 14:54
+Moving time: 14:51
+Average speed: 8.40 km/h (5.2 mi/h)
+Average moving speed: 8.43 km/h (5.2 mi/h)
+Max speed: 11.59 km/h (7.2 mi/h)
+Average pace: 7:08 min/km (11:30 min/mi)
+Average moving pace: 7:07 min/km (11:27 min/mi)
+Fastest pace: 5:11 min/km (8:20 min/mi)
+Max elevation: 384 m (1260 ft)
+Min elevation: 349 m (1146 ft)
+Elevation gain: 406 m (1334 ft)
+Max grade: 8 %
+Min grade: -204 %
+Recorded: 18/02 6:55 PM
+]]></description>
+<TimeStamp><when>2020-02-18T13:40:04.000Z</when></TimeStamp>
+<styleUrl>#end</styleUrl>
+<Point>
+<coordinates>79.917296,23.139446,348.0</coordinates>
+</Point>
+</Placemark>
+</Document>
+</kml>
