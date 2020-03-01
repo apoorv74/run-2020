@@ -9,6 +9,8 @@ library(hms)
 library(lubridate)
 library(knitr)
 library(kableExtra)
+library(fs)
+library(git2r)
 
 all_vars <-
   c('OpenTracks Name',

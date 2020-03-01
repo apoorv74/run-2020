@@ -8,12 +8,7 @@ output:
 ---
     
 ```{r setup, include=FALSE}
-# source("globals.R")
-library(flexdashboard)
-library(hms)
-library(lubridate)
-library(knitr)
-library(kableExtra)
+source("globals.R")
 
 run_dataset <-
   readr::read_rds('all_runs.rds') %>% mutate(`Cumulative Distance` = cumsum(`Distance (km)`),month = month(`Date of run`,label = TRUE, abbr = TRUE), day = wday(`Date of run`,label = TRUE, abbr = TRUE,week_start = 1))

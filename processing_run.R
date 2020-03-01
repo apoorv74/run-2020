@@ -17,6 +17,9 @@ updated_runs_df <- add_variables(all_runs_df)
 readr::write_rds(x = updated_runs_df, path = 'all_runs.rds')
 
 ## Render flexdashboard
+rmarkdown::render("run-dashboard.Rmd")
+fs::file_copy("run-dashboard.html","index.html")
+fs::file_delete("run-dashboard.html")
 
 ## Deploy to behindbars
 
