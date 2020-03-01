@@ -22,4 +22,7 @@ fs::file_copy("run-dashboard.html","index.html")
 fs::file_delete("run-dashboard.html")
 
 ## Deploy to behindbars
+git2r::status()
+git2r::add(path = ".")
+git2r::commit(message = glue("render dashboard - {Sys.Date()}"))
 
