@@ -8,6 +8,7 @@ library(flexdashboard)
 library(hms)
 library(lubridate)
 library(knitr)
+library(kableExtra)
 
 all_vars <-
   c('OpenTracks Name',

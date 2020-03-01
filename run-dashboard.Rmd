@@ -1,13 +1,20 @@
 ---
-title: "Run Dashboard"
+title: "Run Tracker - 2020"
 output: 
   flexdashboard::flex_dashboard:
     orientation: rows
     vertical_layout: scroll
+    theme: spacelab
 ---
     
 ```{r setup, include=FALSE}
-source("globals.R")
+# source("globals.R")
+library(flexdashboard)
+library(hms)
+library(lubridate)
+library(knitr)
+library(kableExtra)
+
 run_dataset <-
   readr::read_rds('all_runs.rds') %>% mutate(`Cumulative Distance` = cumsum(`Distance (km)`),month = month(`Date of run`,label = TRUE, abbr = TRUE), day = wday(`Date of run`,label = TRUE, abbr = TRUE,week_start = 1))
 ```
@@ -131,6 +138,11 @@ col_names <- c(
 "Max elevation",
 "Min elevation")
 
-run_dataset[,col_names] %>% kable()
+run_dataset[, col_names] %>% kable() %>% kable_styling(
+  bootstrap_options = c("striped", "hover", "condensed"),
+  fixed_thead = T
+)
+
+
 ```
 
