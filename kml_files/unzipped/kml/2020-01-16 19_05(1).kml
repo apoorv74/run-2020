@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2"
+xmlns:gx="http://www.google.com/kml/ext/2.2"
+xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+<open>1</open>
+<visibility>1</visibility>
+<name><![CDATA[2020-01-16 19:05]]></name>
+<atom:author><atom:name><![CDATA[OpenTracks]]></atom:name></atom:author>
+<Style id="track">
+<LineStyle><color>7f0000ff</color><width>4</width></LineStyle>
+<IconStyle>
+<scale>1.3</scale>
+<Icon><href>http://earth.google.com/images/kml-icons/track-directional/track-0.png</href></Icon>
+</IconStyle>
+</Style>
+<Style id="start"><IconStyle>
+<scale>1.3</scale>
+<Icon><href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href></Icon>
+<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+</IconStyle></Style>
+<Style id="end"><IconStyle>
+<scale>1.3</scale>
+<Icon><href>http://maps.google.com/mapfiles/kml/paddle/red-circle.png</href></Icon>
+<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+</IconStyle></Style>
+<Style id="waypoint"><IconStyle>
+<scale>1.3</scale>
+<Icon><href>http://maps.google.com/mapfiles/kml/pushpin/blue-pushpin.png</href></Icon>
+<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+</IconStyle></Style>
+<Schema id="schema">
+<gx:SimpleArrayField name="power" type="float">
+<displayName><![CDATA[Power (W)]]></displayName>
+</gx:SimpleArrayField>
+<gx:SimpleArrayField name="cadence" type="float">
+<displayName><![CDATA[Cadence (rpm)]]></displayName>
+</gx:SimpleArrayField>
+<gx:SimpleArrayField name="heart_rate" type="float">
+<displayName><![CDATA[Heart rate (bpm)]]></displayName>
+</gx:SimpleArrayField>
+</Schema>
+<Placemark>
+<name><![CDATA[2020-01-16 19:05 (Start)]]></name>
+<description><![CDATA[]]></description>
+<TimeStamp><when>2020-01-16T13:35:53.000Z</when></TimeStamp>
+<styleUrl>#start</styleUrl>
+<Point>
+<coordinates>79.917684,23.14067,345.0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[2020-01-16 19:05]]></name>
+<description><![CDATA[Mpseb ground]]></description>
+<icon><![CDATA[RUN]]></icon>
+<styleUrl>#track</styleUrl>
+<ExtendedData>
+<Data name="type"><value><![CDATA[running]]></value></Data>
+</ExtendedData>
+<gx:MultiTrack>
+<altitudeMode>absolute</altitudeMode>
+<gx:interpolate>1</gx:interpolate>
+<gx:Track>
+<when>2020-01-16T13:35:53.000Z</when>
+<gx:coord>79.917684 23.14067 345.0</gx:coord>
+<when>2020-01-16T13:35:54.000Z</when>
+<gx:coord>79.917627 23.140678 346.0</gx:coord>
+<when>2020-01-16T13:35:55.000Z</when>
+<gx:coord>79.917619 23.140653 349.0</gx:coord>
+<when>2020-01-16T13:35:56.000Z</when>
+<gx:coord>79.917624 23.140637 350.0</gx:coord>
+<when>2020-01-16T13:35:57.000Z</when>
+<gx:coord>79.917626 23.14062 352.0</gx:coord>
+<when>2020-01-16T13:36:01.000Z</when>
+<gx:coord>79.91764 23.140632 353.0</gx:coord>
+<when>2020-01-16T13:36:02.000Z</when>
+<gx:coord>79.917639 23.140627 354.0</gx:coord>
+<when>2020-01-16T13:36:09.000Z</when>
+<gx:coord>79.917636 23.140621 353.0</gx:coord>
+<when>2020-01-16T13:36:10.000Z</when>
+<gx:coord>79.917628 23.140611 354.0</gx:coord>
+<when>2020-01-16T13:36:11.000Z</when>
+<gx:coord>79.917617 23.140595 354.0</gx:coord>
+<ExtendedData>
+<SchemaData schemaUrl="#schema">
+</SchemaData>
+</ExtendedData>
+</gx:Track>
+</gx:MultiTrack>
+</Placemark>
+<Placemark>
+<name><![CDATA[2020-01-16 19:05 (End)]]></name>
+<description><![CDATA[OpenTracks
+
+Name: 2020-01-16 19:05
+Activity type: running
+Description: Mpseb ground
+Total distance: 0.02 km (0.0 mi)
+Total time: 14:57
+Moving time: 00:08
+Average speed: 0.07 km/h (0.0 mi/h)
+Average moving speed: 7.83 km/h (4.9 mi/h)
+Max speed: 7.83 km/h (4.9 mi/h)
+Average pace: 860:15 min/km (1384:26 min/mi)
+Average moving pace: 7:40 min/km (12:20 min/mi)
+Fastest pace: 7:40 min/km (12:20 min/mi)
+Max elevation: 351 m (1152 ft)
+Min elevation: 345 m (1132 ft)
+Elevation gain: 351 m (1152 ft)
+Max grade: 0 %
+Min grade: 0 %
+Recorded: 16/01 7:05 PM
+]]></description>
+<TimeStamp><when>2020-01-16T13:36:11.000Z</when></TimeStamp>
+<styleUrl>#end</styleUrl>
+<Point>
+<coordinates>79.917617,23.140595,354.0</coordinates>
+</Point>
+</Placemark>
+</Document>
+</kml>
