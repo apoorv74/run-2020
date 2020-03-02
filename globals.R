@@ -32,3 +32,5 @@ all_vars <-
     'Min grade',
     'Recorded'
   )
+
+graph_color <- '#c7d1dd'

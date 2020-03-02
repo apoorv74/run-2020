@@ -74,7 +74,7 @@ Row
 month_df <- run_dataset %>% group_by(month) %>% summarise(total_distance = sum(`Distance (km)`), total_runs = length(month))
 
 ggplot(month_df, aes(x=month, y=total_distance)) + 
-  geom_bar(stat="identity", width=.4, fill="#a0c1d1") + 
+  geom_bar(stat="identity", width=.4, fill=graph_color) + 
   coord_flip() +
   theme_minimal(base_family = "PT Sans") +
   theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),axis.title = element_blank(), axis.ticks.x = element_blank(), axis.text.x = element_blank()) + geom_text(aes(label=total_distance),position = position_stack(vjust = 0.9))
@@ -84,7 +84,7 @@ ggplot(month_df, aes(x=month, y=total_distance)) +
 
 ```{r}
 ggplot(month_df, aes(x=month, y=total_runs)) + 
-  geom_bar(stat="identity", width=.4, fill="#a0c1d1") + 
+  geom_bar(stat="identity", width=.4, fill=graph_color) + 
   coord_flip() +
   theme_minimal(base_family = "PT Sans") +
   theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),axis.title = element_blank(), axis.ticks.x = element_blank(), axis.text.x = element_blank()) + geom_text(aes(label=total_runs),position = position_stack(vjust = 0.9))
@@ -99,7 +99,7 @@ Row
 weekly_df <- run_dataset %>% group_by(day) %>% summarise(total_distance = sum(`Distance (km)`), total_runs = length(day))
 
 ggplot(weekly_df, aes(x=day, y=total_distance)) + 
-  geom_bar(stat="identity", width=.4, fill="#a0c1d1") + 
+  geom_bar(stat="identity", width=.4, fill=graph_color) + 
   coord_flip() +
   theme_minimal(base_family = "PT Sans") +
   theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),axis.title = element_blank(), axis.ticks.x = element_blank(), axis.text.x = element_blank()) + geom_text(aes(label=total_distance),position = position_stack(vjust = 0.9))
@@ -109,7 +109,7 @@ ggplot(weekly_df, aes(x=day, y=total_distance)) +
 
 ```{r}
 ggplot(weekly_df, aes(x=day, y=total_runs)) + 
-  geom_bar(stat="identity", width=.4, fill="#a0c1d1") + 
+  geom_bar(stat="identity", width=.4, fill=graph_color) + 
   coord_flip() +
   theme_minimal(base_family = "PT Sans") +
   theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),axis.title = element_blank(), axis.ticks.x = element_blank(), axis.text.x = element_blank()) + geom_text(aes(label=total_runs),position = position_stack(vjust = 0.9))
