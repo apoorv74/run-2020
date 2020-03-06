@@ -22,7 +22,8 @@ fs::file_copy("run-dashboard.html","index.html",overwrite = TRUE)
 fs::file_delete("run-dashboard.html")
 
 ## Deploy to behindbars
+cred <- git2r::cred_token()
 git2r::status()
 git2r::add(path = ".")
 git2r::commit(message = glue("render dashboard - {Sys.Date()}"))
-
+git2r::push(object = ".", name = 'origin',refspec = "refs/heads/master",credentials = cred)
