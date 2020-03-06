@@ -41,3 +41,6 @@ vignettes/*.pdf
 .DS_Store
 packrat/lib*/
 packrat/src/*
+
+# Data
+kml_files/*
